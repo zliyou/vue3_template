@@ -56,7 +56,7 @@ onMounted(() => {
       @click="(countStore.increment(), handleClick())"
       >Add</van-button
     >
-    <span class="ml-2 text-xl">{{ countStore.count }}</span>
+    <span class="ml-2 text-xl text-teal-300">{{ countStore.count }}</span>
     <div class="text-left">
       <div v-for="{ id: key, title } in list" :key class="mb-2">{{ key }}: {{ title }}</div>
     </div>

@@ -12,9 +12,8 @@ import { VantResolver } from 'unplugin-vue-components/resolvers'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
     vueJsx(),
-    // tailwindcss(),
+    tailwindcss(),
     vueDevTools(),
     AutoImport({
       include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/],
@@ -26,6 +25,7 @@ export default defineConfig({
       dirs: ['src/components'],
       resolvers: [VantResolver()],
     }),
+    vue(),
   ],
   resolve: {
     alias: {
